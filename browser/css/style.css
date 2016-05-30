@@ -1,0 +1,33 @@
+html, body {
+	background-color: #F7F7F7;
+}
+
+nav.navbar.navbar-default {
+	background-color: #48525D;
+	height: 60px !important;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+#siteLogo {
+	color: white;
+}
+
+#moviesLink {
+	color: white;
+}
+
+ul.dropdown-menu {
+	background-color: #4B565D;
+}
+
+button.btn.background {
+	background-color: #F7F7F7;
+}
+
+button.btn.background:hover {
+	background-color: white;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+	<title>Switch Movie Grid</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- APP SCRIPT -->
+    <script src="/js/app.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="/js/movie-list/movie-list.controller.js"></script>
+
+    <!-- FACTORIES -->
+    <script src="/js/movie/movie.factory.js"></script>
+
+    <!-- STATES -->
+    <script src="/js/movie-list/movie-list.state.js"></script>
+
+    <!-- DIRECTIVES -->
+    <script src="/js/navbar/navbar.directive.js"></script>
+
+</head>
+<body ng-app="SwitchMovieGrid">
+	<navbar></navbar>
+	<ui-view></ui-view>
+</body>
+</html>

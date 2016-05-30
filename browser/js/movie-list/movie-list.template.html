@@ -1,0 +1,61 @@
+<div class="container-fluid">
+	<div class="col-md-12">
+		<h4>Latest Releases</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-2" style="margin-bottom:20px;" class="shadow" ng-repeat="movie in row1">
+			<img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie.image}}">
+			<!-- MAYBE SHOW THIS (FOR MOVIES WITH NO IMAGE) -->
+			<!-- <h5 class="col-md-8 col-md-offset-2" style="position:absolute;z-index:2;margin-top:-70px;text-align:center;" ng-show="!movie.poster_path">{{movie.title}}</h5> -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2" style="margin-bottom:20px;" class="shadow" ng-repeat="movie in row2">
+			<img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie.image}}">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2" style="margin-bottom:20px;" class="shadow" ng-repeat="movie in row3">
+			<img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie.image}}">
+		</div>
+	</div>
+
+	<!-- FINAL ROW WITH 2 MOVIES IN IT -->
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-2" style="margin-bottom:20px;" class="shadow">
+			<img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie19.image}}">
+		</div>
+		<div class="col-md-2" style="margin-bottom:20px;" class="shadow">
+			<img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie20.image}}">
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</div> 
+
+
+<!-- PAGE TOOLBAR -->
+<div class="col-md-6 col-md-offset-3" style="text-align:center;margin-bottom:100px;">
+	<div class="toolbar" role="toolbar">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default background">
+				<span>First</span>
+			</button>
+			<button type="button" class="btn btn-default background">
+				<span>Prev</span>
+			</button>
+			<button type="button" class="btn btn-default background" ng-repeat="btn in pageBtns" ui-sref="movieList({pageNum: btn})">
+				<span>{{ btn }}</span>
+			</button>
+			<button type="button" class="btn btn-default background">
+				<span>...</span>
+			</button>
+			<button type="button" class="btn btn-default background">
+				<span>Next</span>
+			</button>
+			<button type="button" class="btn btn-default background">
+				<span>Last</span>
+			</button>
+		</div>
+	</div>
+</div>
