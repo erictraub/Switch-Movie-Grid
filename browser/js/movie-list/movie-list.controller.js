@@ -5,9 +5,11 @@ app.controller('MovieListCtrl', function($scope, movies, MovieFactory, $statePar
 	$scope.movie19 = movies.results[18];
 	$scope.movie20 = movies.results[19];
 	$scope.pages = movies.total_pages;
+	$scope.currentPage = Number($stateParams.pageNum);
 
 	var pages = [];
 	var count = 0;
+	
 	for (var i = $stateParams.pageNum; i <= $scope.pages; i++) {
 		if (count < 3) {
 			count++;

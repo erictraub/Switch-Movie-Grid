@@ -35,25 +35,25 @@
 
 
 <!-- PAGE TOOLBAR -->
-<div class="col-md-6 col-md-offset-3" style="text-align:center;margin-bottom:100px;">
+<div class="col-md-6 col-md-offset-3" style="text-align:center;margin-bottom:100px;margin-top:50px;">
 	<div class="toolbar" role="toolbar">
 		<div class="btn-group">
-			<button type="button" class="btn btn-default background">
+			<button type="button" class="btn btn-default background green" ui-sref="movieList({pageNum: 1})">
 				<span>First</span>
 			</button>
-			<button type="button" class="btn btn-default background">
+			<button type="button" class="btn btn-default background" ui-sref="movieList({pageNum: currentPage - 1})" ng-show="currentPage !== 1">
 				<span>Prev</span>
 			</button>
-			<button type="button" class="btn btn-default background" ng-repeat="btn in pageBtns" ui-sref="movieList({pageNum: btn})">
+			<button type="button" class="btn btn-default background" ng-class="{ green: btn === pageBtns[0] }" ng-repeat="btn in pageBtns" ui-sref="movieList({pageNum: btn})">
 				<span>{{ btn }}</span>
 			</button>
-			<button type="button" class="btn btn-default background">
+			<button type="button" class="btn btn-default background" ui-sref="movieList({pageNum: currentPage + 3})" ng-hide="currentPage >= pages - 2">
 				<span>...</span>
 			</button>
-			<button type="button" class="btn btn-default background">
+			<button type="button" class="btn btn-default background" ui-sref="movieList({pageNum: currentPage + 1})" ng-hide="currentPage >= pages">
 				<span>Next</span>
 			</button>
-			<button type="button" class="btn btn-default background">
+			<button type="button" class="btn btn-default background green" ui-sref="movieList({pageNum: pages})">
 				<span>Last</span>
 			</button>
 		</div>

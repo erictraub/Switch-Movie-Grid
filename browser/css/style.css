@@ -25,9 +25,17 @@ ul.dropdown-menu {
 
 button.btn.background {
 	background-color: #F7F7F7;
+	color: #828585;
 }
 
 button.btn.background:hover {
 	background-color: white;
 }
 
+button.btn.background.green {
+	color:#3DBA63;
+}
+
+.green {
+	color:#3DBA63;
+}
