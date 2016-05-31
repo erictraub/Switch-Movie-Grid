@@ -3,31 +3,31 @@
 		<h4>Latest Releases</h4>
 	</div>
 	<div class="row">
-		<div class="col-md-2" style="margin-bottom:20px;" ng-repeat="movie in row1" ui-sref="movieDetail({movieId: movie.id, pageNum: currentPage})">
+		<div class="col-md-2 col-xs-6" style="margin-bottom:20px;" ng-repeat="movie in row1" ui-sref="movieDetail({movieId: movie.id, pageNum: currentPage})">
 			<a href="#" class="tt"><img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie.image}}"><span class="ctr">{{ movie.title }}</span></a>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2" style="margin-bottom:20px;" ng-repeat="movie in row2" ui-sref="movieDetail({movieId: movie.id, pageNum: currentPage})">
+		<div class="col-md-2 col-xs-6" style="margin-bottom:20px;" ng-repeat="movie in row2" ui-sref="movieDetail({movieId: movie.id, pageNum: currentPage})">
 			<a href="#" class="tt"><img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie.image}}"><span class="ctr">{{ movie.title }}</span></a>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2" style="margin-bottom:20px;" ng-repeat="movie in row3" ui-sref="movieDetail({movieId: movie.id, pageNum: currentPage})">
+		<div class="col-md-2 col-xs-6" style="margin-bottom:20px;" ng-repeat="movie in row3" ui-sref="movieDetail({movieId: movie.id, pageNum: currentPage})">
 			<a href="#" class="tt"><img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie.image}}"><span class="ctr">{{ movie.title }}</span></a>
 		</div>
 	</div>
 
 	<!-- FINAL ROW WITH 2 MOVIES IN IT -->
 	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-2" style="margin-bottom:20px;" ui-sref="movieDetail({movieId: movie19.id, pageNum: currentPage})">
+		<div class="col-md-4 col-xs-0"></div>
+		<div class="col-md-2 col-xs-6" style="margin-bottom:20px;" ui-sref="movieDetail({movieId: movie19.id, pageNum: currentPage})">
 			<a href="#" class="tt"><img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie19.image}}"><span class="ctr">{{ movie19.title }}</span></a>
 		</div>
-		<div class="col-md-2" style="margin-bottom:20px;" ui-sref="movieDetail({movieId: movie20.id, pageNum: currentPage})">
+		<div class="col-md-2 col-xs-6" style="margin-bottom:20px;" ui-sref="movieDetail({movieId: movie20.id, pageNum: currentPage})">
 			<a href="#" class="tt"><img ng-style="{'box-shadow': '6px 6px 26px 1px rgba(0,0,0,0.52)'}" class="img-responsive" ng-src="{{movie20.image}}"><span class="ctr">{{ movie20.title }}</span></a>
 		</div>
-		<div class="col-md-4"></div>
+		<div class="col-md-4 col-xs-0"></div>
 	</div>
 </div> 
 

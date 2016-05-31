@@ -89,6 +89,10 @@ button.btn.background.green {
 	height: 100%;
 }
 
+.none {
+	text-decoration: none !important;
+}
+
 
 
 
