@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	<div class="col-md-12">
+	<div class="col-md-12" style="margin-top: 25px;">
 		<h4>Latest Releases</h4>
 	</div>
 	<div class="row">
@@ -37,22 +37,22 @@
 	<div class="toolbar" role="toolbar">
 		<div class="btn-group">
 			<button type="button" class="btn btn-default background green" ui-sref="movieList({pageNum: 1})">
-				<span>First</span>
+				<span class="small">First</span>
 			</button>
 			<button type="button" class="btn btn-default background" ui-sref="movieList({pageNum: currentPage - 1})" ng-show="currentPage !== 1">
-				<span>Prev</span>
+				<span class="small">Prev</span>
 			</button>
 			<button type="button" class="btn btn-default background" ng-class="{ green: btn === pageBtns[0] }" ng-repeat="btn in pageBtns" ui-sref="movieList({pageNum: btn})">
-				<span>{{ btn }}</span>
+				<span class="small">{{ btn }}</span>
 			</button>
 			<button type="button" class="btn btn-default background" ui-sref="movieList({pageNum: currentPage + 3})" ng-hide="currentPage >= pages - 2">
-				<span>...</span>
+				<span class="small">...</span>
 			</button>
 			<button type="button" class="btn btn-default background" ui-sref="movieList({pageNum: currentPage + 1})" ng-hide="currentPage >= pages">
-				<span>Next</span>
+				<span class="small">Next</span>
 			</button>
 			<button type="button" class="btn btn-default background green" ui-sref="movieList({pageNum: pages})">
-				<span>Last</span>
+				<span class="small">Last</span>
 			</button>
 		</div>
 	</div>

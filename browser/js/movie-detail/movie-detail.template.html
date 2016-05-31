@@ -1,53 +1,75 @@
-<div style="background-image: url('{{movie.image}}'); height:100vh;background-size:cover;margin-top:-25px;">
-	<div class="trans">
+<div style="background-color: black; overflow: auto;">
+	
+	<div style="background-image: url('{{movie.image}}'); height:100vh;background-size:cover;margin-top:-25px;">
+		<div class="trans" >
 
-		<!-- ARROWS -->
-		<div class="row" style="margin-bottom:40px;">
-			<div class="col-md-3 white" style="text-align:center;">
-				<a ui-sref="movieList({pageNum: 1})" class="none"><h3><span class="glyphicon glyphicon-menu-left"></span>Back to list</h3></a>
-			</div>
-			<div class="col-md-6"></div>
-			<div class="col-md-3 white" style="text-align:center;">
-				<a ng-click="next()" class="none"><h3>Next Movie<span class="glyphicon glyphicon-menu-right"></span></h3></a>
-			</div>
-		</div>
-
-
-		<div class="container">
-			<div classs="row">
-				<div class="col-md-1"></div>
-				
-				<!-- IMAGE -->
-				<div class="col-md-3">
-					<img class="img-responsive" ng-src="{{ movie.image }}" ng-style="{'box-shadow': '10px 10px 36px 0px rgba(82,82,82,0.89)'}">
+			<!-- ARROWS -->
+			<div class="row" style="margin-bottom:40px;">
+				<div class="col-md-3 white col-xs-6" style="text-align:center;">
+					<a ui-sref="movieList({pageNum: 1})" class="none"><h3 class="sm"><span class="glyphicon glyphicon-menu-left"></span>Back to list</h3></a>
 				</div>
+				<div class="col-md-6 col-xs-0"></div>
+				<div class="col-md-3 white col-xs-6" style="text-align:center;">
+					<a ng-click="next()" class="none"><h3 class="sm">Next Movie<span class="glyphicon glyphicon-menu-right"></span></h3></a>
+				</div>
+			</div>
 
-				<!-- MOVIE INFO -->
-				<div class="col-md-7" style="color:white;">
-					<div class="row">
-						<h2 class="col-md-12">{{ movie.title }}</h2>
-						<h4 class="col-md-3">Score: {{ movie.vote_average }}</h4>
-						<h4 class="col-md-3">Adult: {{ movie.adult }}</h4>
-						<h4 class="col-md-6">Release Date: {{ movie.release_date }}</h4>
+
+			<div class="container">
+				<div classs="row">
+					<div class="col-md-1 col-xs-0"></div>
+					
+					<!-- IMAGE -->
+					<div class="col-md-3 col-xs-6">
+						<img class="img-responsive" ng-src="{{ movie.image }}" ng-style="{'box-shadow': '10px 10px 36px 0px rgba(82,82,82,0.89)'}">
 					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-12">
-							<h5>{{ movie.overview }}</h5>
+
+					<!-- MOVIE INFO -->
+					<div class="col-md-7 col-sx-6" style="color:white;">
+						<div class="row">
+
+							<!-- FOR DESKTOP -->
+							<h2 class="col-md-12" id="no">{{ movie.title }}</h2>
+							<h4 class="col-md-3" id="no">Score: {{ movie.vote_average }}</h4>
+							<h4 class="col-md-3" id="no">Adult: {{ movie.adult }}</h4>
+							<h4 class="col-md-6" id="no">Release Date: {{ movie.release_date }}</h4>
+
+							<!-- FOR MOBOLE -->
+							<div class="dtno">
+								<h4 class="col-XS-3">Score:</h4>
+								<p>{{ movie.vote_average }}</p>
+								<h4 class="col-XS-3">Adult:</h4>
+								<p>{{ movie.adult }}</p>
+								<h4 class="col-XS-6">Release Date:</h4>
+								<p>{{ movie.release_date }}</p>
+							</div>
+
 						</div>
+							<div class="row">
+								<div class="col-md-12 dtno">
+									<h3>{{ movie.title }}</h3>
+								</div>
+							</div>
+						<hr>
+						<div class="row">
+							<div class="col-md-12">
+								<h5 id="no">{{ movie.overview }}</h5>
+								<p class="dtno">{{ movie.overview }}</p>
+							</div>
+						</div>
+						<hr>
 					</div>
-					<hr>
+
+
+
+					<div class="col-md-1"></div>
 				</div>
-
-
-
-				<div class="col-md-1"></div>
 			</div>
+
+
+
+
+
 		</div>
-
-
-
-
-
 	</div>
 </div>

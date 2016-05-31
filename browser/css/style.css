@@ -93,7 +93,45 @@ button.btn.background.green {
 	text-decoration: none !important;
 }
 
+.hvr:hover {
+	color: gray !important;
+}
 
+#outline {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 9px;
+}
 
+#outline:hover {
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 9px;
+}
+
+@media screen and (max-width: 750px) {
+    .small {
+        font-size: 8px;
+    }
+
+    .sm {
+    	font-size: 15px;
+    }
+
+    #no {
+    	display: none;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+	.dtno {
+		display: none;
+	}
+}
 
 
