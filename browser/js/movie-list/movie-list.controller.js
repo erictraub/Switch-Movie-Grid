@@ -19,4 +19,11 @@ app.controller('MovieListCtrl', function($scope, movies, MovieFactory, $statePar
 
 	$scope.pageBtns = pages;
 
+	// $( ".row" ).delegate( "img", "click", function() {
+	// 	  console.log('RAN')
+	// 	  $('.col-md-2').css({width: '4000px'})
+	// 	  $(this).css("z-index", 30);
+	// 	  $(this).animate({ width: '2000px'}, 500);
+	// });
+
 });

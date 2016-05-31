@@ -4,7 +4,8 @@ html, body {
 
 nav.navbar.navbar-default {
 	background-color: #48525D;
-	height: 60px !important;
+	border:1px solid #48525D;
+	border-radius: 0px !important;
 }
 
 .nav.navbar-nav.navbar-right li a {
@@ -39,3 +40,56 @@ button.btn.background.green {
 .green {
 	color:#3DBA63;
 }
+
+.tt {
+	position: relative;
+	z-index: 20;
+}
+
+.tt span {
+	display: none;
+	transition-duration: 5s;
+}
+
+.tt:hover {
+	z-index: 21;
+}
+
+.tt:hover span {
+	display: block;
+	width: 150px;
+	padding: 5px;
+	color: white;
+	background: rgba(54, 55, 52, .8);
+	text-decoration: none;
+	position: absolute;
+	border-radius: 5px;
+	top: -160px;
+	left: 15px;
+	box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.7);
+}
+
+.ctr {
+	text-align: center;
+}
+
+.white {
+	color:#D4D8D8;
+	margin-top:15px;
+}
+
+.white:hover {
+	color:#3DBA63;
+	text-decoration: none;
+}
+
+.trans {
+	background: rgba(0, 0, 0, .8);
+	background-size:cover;
+	height: 100%;
+}
+
+
+
+
+
